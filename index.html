@@ -7,45 +7,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
-body{background:#fdf6e3;color:#2b1d08}
-header{background:#1a120b;padding:15px 5%;display:flex;justify-content:space-between;align-items:center}
-header b{font-size:26px;color:#e8b44a;font-family:'Amiri',serif}
+body{background:#f7ecd0;color:#2b1d08}
+header{background:#1a120b;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
+header b{font-size:24px;color:#e8b44a;font-family:'Amiri',serif}
 header b span{color:#fff}
-nav a{color:#fff;text-decoration:none;margin:0 8px;font-weight:700;font-size:14px}
-.hero{background:#c9a227;text-align:center;padding:60px 20px}
-.hero h1{font-family:'Amiri',serif;font-size:42px;line-height:1.4}
-.hero p{margin:15px 0 25px;font-size:18px}
-.btn{background:#1a120b;color:#e8b44a;padding:14px 32px;border-radius:30px;text-decoration:none;font-weight:900;display:inline-block}
-.section{padding:40px 5%;max-width:1000px;margin:auto}
-.section h2{text-align:center;font-family:'Amiri',serif;font-size:32px;color:#8a6d14;margin-bottom:20px}
-.card{background:#fff;border:2px solid #c9a227;padding:20px;border-radius:15px;margin-bottom:15px}
-.card h3{color:#1a120b}
+nav{display:flex;gap:8px;flex-wrap:wrap}
+nav button{background:none;border:2px solid #e8b44a;color:#fff;padding:7px 14px;border-radius:20px;cursor:pointer;font-weight:800}
+nav button.active{background:#e8b44a;color:#000}
+.page{display:none;padding:30px 5%;max-width:1000px;margin:auto}
+.page.active{display:block;animation:fade .4s}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.hero{background:linear-gradient(135deg,#c9a227,#8a6d14);border:4px double #1a120b;border-radius:25px;padding:40px 20px;text-align:center;color:#fff}
+.hero h1{font-family:'Amiri',serif;font-size:38px;line-height:1.5}
+.hero p{margin:15px 0 20px}
+.btn{background:#1a120b;color:#e8b44a;padding:13px 28px;border-radius:30px;border:none;font-weight:900;cursor:pointer;font-size:16px}
+h2{font-family:'Amiri',serif;font-size:30px;text-align:center;color:#8a6d14;margin:10px 0 20px}
+.card{background:#fff;border:2px solid #c9a227;border-radius:18px;padding:20px;margin-bottom:15px}
+.card h3{font-size:20px}
 .card p{color:#666;margin:8px 0}
-.card a{color:#8a6d14;font-weight:800;text-decoration:none}
-.about{background:#fff;border:3px double #c9a227;border-radius:20px;padding:25px;text-align:center}
-.about img{width:150px;height:150px;object-fit:cover;border-radius:50%;border:5px solid #c9a227}
-.contact{background:#1a120b;color:#fff;text-align:center;border-radius:20px;padding:30px 20px}
-.contact a{background:#c9a227;color:#000;padding:10px 18px;border-radius:20px;text-decoration:none;font-weight:800;display:inline-block;margin:5px}
-footer{text-align:center;padding:20px;color:#888;font-size:14px}
-@media(max-width:600px){.hero h1{font-size:30px} nav{display:none}}
-</style>
-</head>
-<body>
-<header><b>زيكو <span>جمال ⚱️</span></b><nav><a href="#lessons">الرحلة</a><a href="#about">عني</a><a href="#contact">تواصل</a></nav></header>
-<section class="hero">
-<h1>التاريخ مش حفظ<br>التاريخ رحلة عبر الزمن مع زيكو جمال</h1>
-<p>من الفراعنة لحد حرب أكتوبر.. هنعيش الحكاية مش هنحفظها</p>
-<a class="btn" href="#lessons">ابدأ الرحلة عبر الزمن 🚀</a>
-</section>
-<section class="section" id="lessons">
-<h2>🗺️ رحلتك عبر الزمن</h2>
-<div class="card"><h3>🏛️ العصر الفرعوني - 1 ثانوي</h3><p>الحضارة المصرية القديمة - الأهرامات - توت عنخ آمون</p><a href="#">سافر للعصر ده ←</a></div>
-<div class="card"><h3>⚔️ الفتوحات الإسلامية - 3 إعدادي</h3><p>فتح الشام والعراق ومصر</p><a href="#">سافر للعصر ده ←</a></div>
-<div class="card"><h3>👑 الدولة العثمانية - 2 ثانوي</h3><p>الحملة الفرنسية - محمد علي</p><a href="#">سافر للعصر ده ←</a></div>
-<div class="card"><h3>🇪🇬 مصر الحديثة - 3 ثانوي</h3><p>ثورة 1919 - ثورة 1952 - حرب أكتوبر 1973</p><a href="#">سافر للعصر ده ←</a></div>
-</section>
-<section class="section"><div class="about" id="about"><img src="https://via.placeholder.com/300"><h2>مين هو زيكو جمال؟</h2><p>مدرس تاريخ، بآمن إن الطالب لازم يعيش الحكاية مش يحفظها. بشرح بأسلوب القصة، وبعملك خرايط ذهنية وأسئلة امتحان تخليك داخل الامتحان وانت متطمن.</p><br><p><b>+5000 طالب | +10 سنة خبرة | 100% نجاح</b></p></div></section>
-<section class="section"><div class="contact" id="contact"><h2>عايز تحجز أو تستفسر؟</h2><br><a href="https://wa.me/201000000000">واتساب 📱</a><a href="https://facebook.com">فيسبوك</a><a href="https://youtube.com">يوتيوب</a><a href="https://t.me">تيليجرام</a></div></section>
-<footer>© 2026 زيكو جمال - اتعمل بحب للتاريخ ❤️</footer>
-</body>
-</html>
+.card button{background:#1a120b;color:#e8b44a;border:none;padding:10px 18px;border-radius:20px;font-weight:800;cursor:pointer}
+.lesson-detail{background:#fff;border:3px double #c9a227;border-radius:20px;padding:25px;margin-top:15px;display:none}
+.lesson-detail.active
